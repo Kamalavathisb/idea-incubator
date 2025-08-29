@@ -69,5 +69,4 @@ This project is **open-source**. Feel free to use and modify it for personal or 
 
 
 
-## 📁 Project Structure
 
