@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idea Incubator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="hero">
+  <div class="hero-content">
+    <h1>💡 Idea Incubator</h1>
+    <p>Capture your ideas, grow your creativity 🌱</p>
+    <a href="#app" class="cta-btn">Get Started</a>
+  </div>
+</header>
+
+<section id="features">
+  <h2>Features</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>📝 Add Ideas</h3>
+      <p>Easily add your creative ideas with title, description, and category.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🏷️ Categorize</h3>
+      <p>Organize your ideas by Tech, Travel, Business, or Personal categories.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🎲 Random Idea</h3>
+      <p>Discover a random idea from an external source for inspiration.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🗑️ Delete All</h3>
+      <p>Remove all ideas with one click to start fresh whenever you want.</p>
+    </div>
+  </div>
+</section>
+
+<section id="app">
+  <div class="container">
+    <form id="ideaForm">
+      <input type="text" id="title" placeholder="Idea Title" required>
+      <textarea id="description" placeholder="Describe your idea..." required></textarea>
+      <select id="category">
+        <option value="Tech">💻 Tech</option>
+        <option value="Travel">✈️ Travel</option>
+        <option value="Business">💼 Business</option>
+        <option value="Personal">🌱 Personal</option>
+      </select>
+      <button type="submit">Add Idea</button>
+    </form>
+
+    <div class="app-buttons">
+      <button id="randomBtn">🎲 Show Random Local Idea</button>
+      <button id="randomIdeaBtn">🌐 Generate Random Idea</button>
+      <button id="clearBtn">🗑️ Clear All Ideas</button>
+    </div>
+
+    <div id="ideaList"></div>
+    <p id="randomIdeaDisplay" class="external-idea"></p>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Idea Incubator</h2>
+  <p>Idea Incubator is your personal tool to capture, organize, and grow your ideas. Perfect for entrepreneurs, students, and creative minds who want to track their innovations and stay inspired.</p>
+</section>
+
+<footer>
+  <p>Made with ❤️ | <a href="https://github.com/" target="_blank">GitHub Repo</a></p>
+</footer>
+
+<div id="randomModal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

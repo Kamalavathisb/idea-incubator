@@ -1,0 +1,121 @@
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  background: radial-gradient(circle,#f9fafc 0%,#e8ebf1 100%);
+  color:#202124;
+  scroll-behavior: smooth;
+}
+
+/* Header / Hero */
+header#hero {
+  background: linear-gradient(90deg,#4285F4,#34A853,#FBBC05,#EA4335);
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+  border-radius:0 0 30px 30px;
+}
+
+.hero-content h1 { font-size:3em; margin:0; font-weight:600; }
+.hero-content p { margin:10px 0; font-size:1.2em; }
+.cta-btn {
+  display:inline-block;
+  background:white; color:#4285F4;
+  padding:12px 30px; margin-top:20px;
+  border-radius:50px; font-weight:600;
+  text-decoration:none; box-shadow:0 4px 12px rgba(0,0,0,0.2);
+  transition:all 0.3s;
+}
+.cta-btn:hover { transform:scale(1.05); box-shadow:0 6px 20px rgba(0,0,0,0.3); }
+
+/* Sections */
+section { padding:60px 20px; max-width:1000px; margin:auto; text-align:center; }
+section h2 { font-size:2em; margin-bottom:30px; }
+section p { font-size:1em; color:#555; max-width:700px; margin:auto; }
+
+/* Features */
+.features-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+.feature-card {
+  background:white; padding:25px; border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  transition:all 0.3s;
+}
+.feature-card:hover { transform:translateY(-10px); box-shadow:0 12px 30px rgba(0,0,0,0.15); }
+.feature-card h3 { font-size:1.2em; margin-bottom:10px; }
+
+/* Idea App */
+.container { width:90%; margin:auto; max-width:900px; }
+
+form {
+  background:white; padding:25px; border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  margin-bottom:20px;
+}
+input, textarea, select { width:100%; margin:10px 0; padding:12px; border-radius:12px; border:1px solid #ccc; font-size:16px; }
+button { cursor:pointer; border-radius:50px; padding:12px 25px; font-weight:600; transition:all 0.2s; box-shadow:0 4px 12px rgba(0,0,0,0.15); }
+button:hover { transform:scale(1.05); box-shadow:0 6px 20px rgba(0,0,0,0.2); }
+
+.app-buttons { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin-bottom:20px; }
+.random-btn { background:#4285F4; color:white; border:none; }
+#clearBtn { background:#DB4437; color:white; border:none; }
+
+/* Idea List Grid */
+#ideaList {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;
+}
+.idea {
+  background:white; padding:20px; border-radius:20px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.1);
+  transition:transform 0.3s, box-shadow 0.3s, opacity 0.3s; opacity:0;
+  text-align:left;
+}
+.idea.show { opacity:1; }
+.idea:hover { transform:translateY(-10px); box-shadow:0 8px 25px rgba(0,0,0,0.15); }
+.idea h3 { margin-top:0; font-size:18px; }
+.idea p { font-size:14px; color:#555; }
+.idea h3 small {
+  padding:5px 12px; border-radius:50px; color:white; font-size:12px; font-weight:500;
+}
+.small-tech { background:#4285F4; }
+.small-travel { background:#DB4437; }
+.small-business { background:#F4B400; }
+.small-personal { background:#0F9D58; }
+
+/* Modal */
+#randomModal {
+  position:fixed; z-index:1000; left:0; top:0;
+  width:100%; height:100%; background:rgba(0,0,0,0.6);
+  display:flex; justify-content:center; align-items:center; opacity:0; pointer-events:none; transition:opacity 0.3s;
+}
+#randomModal.show { opacity:1; pointer-events:auto; }
+.modal-content {
+  background:white; padding:30px; border-radius:20px; max-width:450px; width:90%; text-align:center;
+  transform:translateY(-30px); opacity:0; transition:all 0.4s ease; box-shadow:0 8px 30px rgba(0,0,0,0.2);
+}
+#randomModal.show .modal-content { transform:translateY(0); opacity:1; }
+#closeModal { position:absolute; top:10px; right:15px; font-size:22px; cursor:pointer; }
+
+/* Footer */
+footer { background:#f1f3f4; padding:20px; margin-top:40px; border-radius:20px 20px 0 0; }
+footer p { margin:0; }
+footer a { color:#4285F4; text-decoration:none; font-weight:600; }
+
+/* Responsive */
+@media(max-width:600px){
+  .features-grid, #ideaList { grid-template-columns:1fr; }
+  header#hero { padding:60px 20px; }
+}
+.external-idea {
+  margin-top:20px;
+  font-size:18px;
+  color:#202124;
+  background:#e3f2fd;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
