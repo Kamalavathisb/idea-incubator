@@ -1,6 +1,6 @@
 # 💡 Idea Incubator
 
-![Idea Incubator Banner](https://via.placeholder.com/800x200?text=Idea+Incubator)
+
 
 **Idea Incubator** is a professional, interactive web application that helps you capture, organize, and explore ideas. Perfect for entrepreneurs, students, and creative minds who want to track innovations and stay inspired.  
 
