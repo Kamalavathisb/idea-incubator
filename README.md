@@ -19,7 +19,7 @@
 
 ## 🖥️ Demo
 
-Visit the live website: [Idea Incubator](https://Kamalavathisb.github.io/idea-incubator/)  
+Visit the live website: [Idea Incubator](https://Kamalavathisb.github.io/idea-incubator)  
 
 ---
 
